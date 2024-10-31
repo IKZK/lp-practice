@@ -106,11 +106,6 @@ h2 {
 .skills-contents img {
   height: 300px;
   width: 300px;
-  opacity: 0.7;
-}
-
-.skills-contents img:hover {
-  opacity: 1.0;
 }
 
 .plan {
