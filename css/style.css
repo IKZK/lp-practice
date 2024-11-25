@@ -4,6 +4,19 @@ header {
   background-color:#fff;
 }
 
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+  width: 1100px;
+}
+
+.flex-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 header i {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -15,8 +28,7 @@ header i {
   background-color: #6ba7eb;
   text-decoration: none;
   padding: 10px 20px;
-  float: right;
-  margin-top: 15px;
+  margin: 15px 0;
   transition: color 0.3s ease;
 }
 
@@ -24,12 +36,20 @@ header i {
   color: #333;
 }
 
-.inner {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1100px;
-  width: 100%;
+.hamburger-menu {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: none;
 }
+
+.hamburger-line {
+  width: 100%;
+  height: 5px;
+  background-color: #777;
+  margin: 8px 0;
+}
+
 
 .keyvisual {
   background-image: url(../images/keyvisual/keyvisual.jpg);
@@ -189,4 +209,107 @@ footer p {
   font-size: 13px;
   letter-spacing: 0.5px;
   text-align: right;
+}
+
+/*TAB版*/
+@media (max-width: 1199px){
+  .inner {
+    width: 97%;
+  }
+  .title-wrapper {
+    padding: 250px 0;
+  }
+
+  .title-wrapper h1{
+    text-align: center;
+  }
+  .keyvisual p {
+    text-align: center;
+  }
+
+  .inner.news-contents {
+    padding: 50px 0;
+    width: 100%;
+  }
+
+  .news-contents {
+    display:block;
+    text-align: center;
+  }
+
+  .news-contents-wrapper {
+    box-sizing: border-box;
+    padding: 0 50px;
+  }
+
+  .skills-contents {
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+  
+  .skills-contents img:nth-child(3n) {
+    margin-bottom: 80px;
+  }
+
+  .inner {
+    width: 97%;
+  }
+
+}
+
+/*SP版*/
+@media (max-width: 767px){
+  .inner {
+    width: 97%;
+  }
+
+  .contact-btn {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .title-wrapper {
+  padding: 200px;
+}
+
+.title-wrapper h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.keyvisual p {
+  font-size: 30px;
+  text-align: center;
+}
+
+.th {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.td {
+  font-size: 12px;
+}
+
+.sns {
+  padding:50px 15px;
+  width: 100%;
+}
+
+.sns i {
+  padding: 50px 0;
+  display: block;
+  margin: 0 auto;
+}
+
+.table {
+  width: 50%;
+}
+
 }
